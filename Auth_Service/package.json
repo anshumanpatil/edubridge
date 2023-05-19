@@ -27,7 +27,7 @@
     "swagger-ui-dist": "^3.18.1"
   },
   "scripts": {
-    "start": "NODE_ENV=home nodemon ./bin/www"
+    "start": "NODE_ENV=production nodemon ./bin/www"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -68,7 +68,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:5000/trainers/132e4820-f620-11ed-86e3-b5c8904b17e0",
+							"raw": "http://localhost:5000/trainers/9ca8f480-f623-11ed-8686-c3188f94a396",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -76,7 +76,7 @@
 							"port": "5000",
 							"path": [
 								"trainers",
-								"132e4820-f620-11ed-86e3-b5c8904b17e0"
+								"9ca8f480-f623-11ed-8686-c3188f94a396"
 							]
 						}
 					},

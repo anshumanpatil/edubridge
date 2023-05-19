@@ -1,23 +1,5 @@
 version: '3.3'
 services:
-    trainer:
-        restart: always
-        build: Trainer_Service/.
-        ports:
-        - 5000:5000
-        depends_on:
-            - mongo
-        environment:
-            - NODE_ENV=production
-    course:
-        restart: always
-        build: Course_Service/.
-        ports:
-        - 6000:6000
-        depends_on:
-            - mongo
-        environment:
-            - NODE_ENV=production
     auth:
         restart: always
         build: Auth_Service/.
@@ -30,7 +12,6 @@ services:
     mongo:
         ports:
             - 27017:27017
-        container_name: dkrcomp-mongo
         restart: always
         logging:
             options:

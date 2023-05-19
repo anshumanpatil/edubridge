@@ -1,0 +1,13 @@
+{
+  "app": {
+    "port": 5858
+  },
+  "mongo": {
+    "url": "mongodb://127.0.0.1:27017/trainer"
+  },
+  "jwt": {
+    "secret": "placeholder-secretKey",
+    "algorithm": "HS256",
+    "secret_separator": ":"
+  }
+}

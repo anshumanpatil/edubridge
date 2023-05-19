@@ -2,7 +2,7 @@ version: '3.3'
 services:
     trainer:
         restart: always
-        build: Trainer_Service/.
+        build: .
         ports:
         - 5000:5000
         depends_on:
@@ -10,8 +10,8 @@ services:
         environment:
             - NODE_ENV=production
     mongo:
-        ports:
-            - 27017:27017
+        # ports:
+        #     - 27017:27017
         restart: always
         logging:
             options:

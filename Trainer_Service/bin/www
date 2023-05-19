@@ -8,11 +8,14 @@ var app = require('../app');
 var debug = require('debug')('backend:server');
 var http = require('http');
 var sequelize = require('../db/models')
+var envConfig = require('../config/env');
+var config    = envConfig.get('app');
+
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort('5000');
+var port = normalizePort(config.port);
 app.set('port', port);
 
 /**

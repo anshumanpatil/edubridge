@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "eb95ceae-ba3b-494c-89bb-53c9230ff962",
+		"name": "Edubridge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23242728"
+	},
+	"item": [
+		{
+			"name": "Trainer",
+			"item": [
+				{
+					"name": "Get all Trainers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/trainers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"trainers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Trainers By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/trainers/132e4820-f620-11ed-86e3-b5c8904b17e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"trainers",
+								"132e4820-f620-11ed-86e3-b5c8904b17e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Trainer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Anshuman\",\n    \"middleName\":\"P\",\n    \"surName\":\"Patil\",\n    \"mobile\":\"999999999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/trainers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"trainers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Trainers By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/trainers/132e4820-f620-11ed-86e3-b5c8904b17e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"trainers",
+								"132e4820-f620-11ed-86e3-b5c8904b17e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Trainer By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Anshuman\",\n    \"middleName\":\"Prs\",\n    \"surName\":\"Patil\",\n    \"mobile\":\"999999999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/trainers/132e4820-f620-11ed-86e3-b5c8904b17e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"trainers",
+								"132e4820-f620-11ed-86e3-b5c8904b17e0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"demo\",\n    \"password\":\"demo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"demo\",\n    \"password\":\"demo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "Get all Courses",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Courses By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/courses/3abcc6f0-f620-11ed-a61d-57907231b01a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"courses",
+								"3abcc6f0-f620-11ed-a61d-57907231b01a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Courses",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Golang\",\n    \"duration\":\"one month\",\n    \"fees\":\"1000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Courses By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:6000/courses/3abcc6f0-f620-11ed-a61d-57907231b01a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"courses",
+								"3abcc6f0-f620-11ed-a61d-57907231b01a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Courses By Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.globals.unset('microservices-react-admin_token')"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODQ0Nzg1MTIsImV4cCI6MTY4NDU2NDkxMn0.1_wZxowgj-p7rYqwHV_SqvCmvN48-CBvKhmhNB-pCrA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Golang\",\n    \"duration\":\"one month\",\n    \"fees\":\"2000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/courses/3abcc6f0-f620-11ed-a61d-57907231b01a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"courses",
+								"3abcc6f0-f620-11ed-a61d-57907231b01a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

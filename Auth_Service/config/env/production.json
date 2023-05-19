@@ -1,9 +1,9 @@
 {
   "app": {
-    "port": 6000
+    "port": 7000
   },
   "mongo": {
-    "url": "mongodb://mongo:27017/course"
+    "url": "mongodb://mongo:27017/trainer"
   },
   "jwt": {
     "secret": "placeholder-secretKey",

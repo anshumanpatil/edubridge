@@ -3,7 +3,7 @@ module.exports = {
   '/courses': {
     get: {
       method: 'getCourses',
-      public: true,
+      public: false,
       schema: {}
     },
     post: {
@@ -22,17 +22,17 @@ module.exports = {
   '/courses/:id': {
     get: {
       method: 'getCoursesById',
-      public: true,
+      public: false,
       schema: {}
     },
     delete: {
       method: 'deleteCoursesById',
-      public: true,
+      public: false,
       schema: {}
     },
     put: {
       method: 'updateCourse',
-      public: true,
+      public: false,
       schema: {
         body: {
           name: Joi.string().allow('').required(),

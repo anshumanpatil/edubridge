@@ -3,12 +3,12 @@ module.exports = {
   '/trainers': {
     get: {
       method: 'getTrainers',
-      public: true,
+      public: false,
       schema: {}
     },
     post: {
       method: 'postTrainers',
-      public: true,
+      public: false,
       schema: {
         body: {
           name: Joi.string().allow('').required(),
@@ -23,17 +23,17 @@ module.exports = {
   '/trainers/:id': {
     get: {
       method: 'getTrainersById',
-      public: true,
+      public: false,
       schema: {}
     },
     delete: {
       method: 'deleteTrainersById',
-      public: true,
+      public: false,
       schema: {}
     },
     put: {
       method: 'updateTrainer',
-      public: true,
+      public: false,
       schema: {
         body: {
           name: Joi.string().allow('').required(),

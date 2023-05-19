@@ -1,10 +1,24 @@
 version: '3.3'
 services:
-    node:
+    trainer:
         restart: always
-        build: .
+        build: Trainer_Service/.
         ports:
         - 5000:5000
+        depends_on:
+            - mongo
+    course:
+        restart: always
+        build: Course_Service/.
+        ports:
+        - 6000:6000
+        depends_on:
+            - mongo
+    auth:
+        restart: always
+        build: Auth_Service/.
+        ports:
+        - 7000:7000
         depends_on:
             - mongo
     mongo:

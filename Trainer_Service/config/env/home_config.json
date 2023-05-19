@@ -3,7 +3,7 @@
     "port": 5000
   },
   "mongo": {
-    "url": "mongodb://localhost:27017/trainer"
+    "url": "mongodb://mongo:27017/trainer"
   },
   "jwt": {
     "secret": "placeholder-secretKey",

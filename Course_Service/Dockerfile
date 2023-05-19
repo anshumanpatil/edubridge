@@ -8,7 +8,7 @@ RUN npm install
 # RUN npm run build
 COPY . .
 
-EXPOSE 5000
+EXPOSE 6000
 CMD [ "node", "bin/www" ]
 
 # docker build -t tagName .

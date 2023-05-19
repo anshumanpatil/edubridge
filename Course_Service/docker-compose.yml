@@ -4,13 +4,13 @@ services:
         restart: always
         build: .
         ports:
-        - 5000:5000
+        - 6000:6000
         depends_on:
             - mongo
-    mongo:
+    mongocourse:
         ports:
             - 27017:27017
-        container_name: dkrcomp-mongo
+        container_name: mongocourse-mongo
         restart: always
         logging:
             options:
